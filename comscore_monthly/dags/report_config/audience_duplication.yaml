@@ -1,0 +1,41 @@
+table_name: 'audience_duplication'
+timeframe:
+  - time: '1 month average'
+    id: 1
+targets:
+  - target: 23
+  - target: 5
+  - target: 106
+  - target: 107
+  - targetGroup: 15
+media_measures:  
+  - id: 1
+    name: 'Total Unique Visitors (000)'
+  - id: 2
+    name: 'Total Minutes (MM)'
+  - id: 3
+    name: 'Total Pages Viewed (MM)'
+  - id: 9
+    name: '% Reach'
+reports:
+  - media:
+      - id: 19752642
+        name: 'Zillow Group'
+      - id: 183316
+        name: 'Realtor.com Network'
+  - media:
+      - id: 19752642
+        name: 'Zillow Group'
+      - id: 18968663
+        name: 'Redfin'
+  - media:
+      - id: 19752642
+        name: 'Zillow Group'
+      - id: 18301971
+        name: 'Apartments.com Network'
+  - media:
+      - id: 19752642
+        name: 'Zillow Group'
+      - id: 36359228
+        name: 'HOMES.COM'
+

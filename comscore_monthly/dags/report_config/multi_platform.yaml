@@ -1,0 +1,14 @@
+table_name: 'multi_platform_key_measures'
+categories:
+  - media_set: 778228
+    media_set_type: 2
+    name: 'expanded categories'
+  - media_set: 20
+    media_set_type: 2
+    name: 'topline categories'
+  - media_set: 23
+    media_set_type: 2
+    name: 'custom entities'
+  - media_set: 57
+    media_set_type: 2
+    name: 'top 5000 entities'

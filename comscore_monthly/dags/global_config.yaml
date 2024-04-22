@@ -1,0 +1,35 @@
+common:
+  start_date: '2015-01-01'
+  schedule_interval: '0 0 22 * *'
+  hive_xml: '/etc/spark/conf.dist/hive-site.xml'
+  start_month_id: '181'
+  reports: 'desktop,local_market,multi_platform,cross_visiting,audience_duplication,mobile_web_and_app'
+  local_market:
+    retries: 15  # 15 * 1440 (min) = 15 days
+    retry_delay: 1440
+  api_call: '/emr-always-on/comscore'
+  artifactory_path: 'https://artifactory.zgtools.net/artifactory/analytics-generic/analytics/airflow/dags/big-data/comscore_monthly/{version}'
+  spark_docker_image: 'analytics-docker.artifactory.zgtools.net/analytics/zacs/docker/spark/zbi-spark:main-27'
+  zodiac_config:
+    version: v2
+    zodiac_team: big-data-zbi
+    zodiac_service: datalake-com-score
+    environments:
+      batch:
+        dev: stable
+        stage: stable
+        prod: prod
+
+stage:
+  email: 'gey@zillowgroup.com'
+  bucket_name: 'dev-datalake-zillowgroup'
+  role_arn: 'arn:aws:iam::170606514770:role/dev-comscore-role'
+  sns_topic_etl_notification: 'arn:aws:sns:us-west-2:603124411859:etl-notification'
+  secrets_role: 'arn:aws:iam::603124411859:role/stage-comscore-zbi-read-secrets'
+
+prod:
+  email: 'bigdata-comscore-monthly-prod@zillowgroup.opsgenie.net'
+  bucket_name: "datalake-zillowgroup"
+  role_arn: 'arn:aws:iam::170606514770:role/comscore-role'
+  sns_topic_etl_notification: 'arn:aws:sns:us-west-2:060786813892:etl-notification'
+  secrets_role: 'arn:aws:iam::060786813892:role/prod-comscore-zbi-read-secrets'

@@ -1,0 +1,31 @@
+table_name: 'cross_visiting'
+timeframe:
+  - time: '1 month average'
+    id: 1
+targets:
+  - target: 23
+  - target: 5
+  - target: 106
+  - target: 107
+  - targetGroup: 15
+media_measures:
+  - id: 52
+    name: '% Vertical'
+  - id: 53
+    name: '% Horizontal'
+  - id: 54
+    name: 'Index'
+  - id: 228
+    name: 'Shared Audience (000)'
+reports:
+    - id: 19752642
+      name: 'Zillow Group'
+    - id: 183316
+      name: 'Realtor.com Network'
+    - id: 18968663
+      name: 'Redfin'
+    - id: 18301971
+      name: 'Apartments.com Network'
+    - id: 36359228
+      name: 'HOMES.COM'
+      

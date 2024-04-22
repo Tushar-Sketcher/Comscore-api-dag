@@ -1,0 +1,17 @@
+table_name: 'desktop_key_measures'
+timeframe:
+  - time: '1 month average'
+    id: 1
+categories:
+  - media_set: 778228
+    media_set_type: 2
+    name: 'expanded categories'
+  - media_set: 20
+    media_set_type: 2
+    name: 'topline categories'
+  - media_set: 23
+    media_set_type: 2
+    name: 'custom entities'
+  - media_set: 26
+    media_set_type: 2
+    name: 'top 5000 entities'
